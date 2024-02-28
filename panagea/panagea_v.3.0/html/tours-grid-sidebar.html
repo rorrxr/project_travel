@@ -244,12 +244,6 @@
 						</div>
 					</li>
 					<li>
-						<div class="layout_view">
-							<a href="#0" class="active"><i class="icon-th"></i></a>
-							<a href="tours-list-sidebar.html"><i class="icon-th-list"></i></a>
-						</div>
-					</li>
-					<li>
 						<a class="btn_map" data-bs-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">지도로 보기</a>
 					</li>
 				</ul>
@@ -273,7 +267,7 @@
 								<h6>카테고리</h6>
 								<ul>
 									<li>
-										<label class="container_check">전체 <small>(945)</small>
+										<label class="container_check">전체 <small>(975)</small>
 								            <input type="checkbox">
 								            <span class="checkmark"></span>
 								        </label>
@@ -302,35 +296,35 @@
 								            <span class="checkmark"></span>
 								        </label>
 									</li>
+									<li>
+										<label class="container_check">기타 <small>(30)</small>
+								            <input type="checkbox">
+								            <span class="checkmark"></span>
+								        </label>
+									</li>
 								</ul>
 							</div>
 							<div class="filter_type">
-                                <h6>시간</h6>
+                                <h6>가격</h6>
                                 <input type="text" id="range" name="range" value="">
                             </div>
 							<div class="filter_type">
 								<h6>평점</h6>
 								<ul>
 									<li>
-										<label class="container_check">★★★★★ <small>(25)</small>
+										<label class="container_check">8+ <small>(25)</small>
 								            <input type="checkbox">
 								            <span class="checkmark"></span>
 								        </label>
 									</li>
 									<li>
-										<label class="container_check">★★★★ <small>(26)</small>
+										<label class="container_check">6+ <small>(26)</small>
 								            <input type="checkbox">
 								            <span class="checkmark"></span>
 								        </label>
 									</li>
 									<li>
-										<label class="container_check">★★★ <small>(25)</small>
-								            <input type="checkbox">
-								            <span class="checkmark"></span>
-								        </label>
-									</li>
-									<li>
-										<label class="container_check">★★ <small>(12)</small>
+										<label class="container_check">4+ <small>(25)</small>
 								            <input type="checkbox">
 								            <span class="checkmark"></span>
 								        </label>
@@ -352,7 +346,7 @@
 									<figure>
 										<a href="#0" class="wish_bt"></a>
 										<a href="tour-detail.html"><img src="img/tour_1.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
-										<small>테마파크</small>
+										<small style = "text-align: right;">인기</small>
 									</figure>
 									<div class="wrapper">
 										<h3><a href="tour-detail.html">롯데월드</a></h3>
@@ -361,6 +355,7 @@
 									</div>
 									<ul>
 										<li><div><em>350 Reviews</em></div></li>
+										<li><div><em>Likes 200</em></div></li>
 										<li><div class="score"><span>총평<br>Good</span><strong>8.9</strong></div></li>
 
 									</ul>
@@ -381,6 +376,8 @@
 									</div>
 									<ul>
 										<li><div><em>350 Reviews</em></div></li>
+										<li><div><em>Likes 50</em></div></li>
+
 										<li><div class="score"><span>총평<br>Good</span><strong>7.0</strong></div></li>
 									</ul>
 								</div>
@@ -673,13 +670,13 @@
 		 $("#range").ionRangeSlider({
             hide_min_max: true,
             keyboard: true,
-            min: 30,
-            max: 180,
+            min: 1000,
+            max: 500000,
             from: 60,
             to: 130,
             type: 'double',
             step: 1,
-            prefix: "Min. ",
+            prefix: "price. ",
             grid: false
         });
 	</script>
